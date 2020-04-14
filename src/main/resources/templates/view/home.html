@@ -9,17 +9,15 @@
 <link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-
 	<div class="container">
-		<!-- 		<form action="/action_page.php"> -->
 		<div class="row">
-			<h2 style="margin-left:50px;">Login with Social Media</h2>
+			<h2 style="margin-left: 50px;">Login with Social Media</h2>
 
 			<div class="col">
-				<a href="#" class="fb btn"> <i class="fa fa-facebook fa-fw"></i>
+				<a th:href="@{'/facebooklogin'}" class="fb btn"> <i class="fa fa-facebook fa-fw"></i>
 					Login with Facebook
-				</a> <a href="#" class="twitter btn"> <i class="fa fa-twitter fa-fw"></i>
-					Login with Twitter
+				</a> <a href="#" class="linkedin btn"> <i
+					class="fa fa-linkedin fa-fw"></i> Login with LinkedIn
 				</a> <a href="#" class="google btn"><i class="fa fa-google fa-fw">
 				</i> Login with Google+ </a>
 			</div>
@@ -27,7 +25,5 @@
 
 		</div>
 	</div>
-
-
 </body>
 </html>
